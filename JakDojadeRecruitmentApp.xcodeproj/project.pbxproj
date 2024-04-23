@@ -7,15 +7,30 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		04BDC4FDF8A7F78FCAA4BA91 /* Pods_JakDojadeRecruitmentApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4109FBE2D83117FA061E1C15 /* Pods_JakDojadeRecruitmentApp.framework */; };
 		6B0CE95F2BD7918700583BAC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B0CE95E2BD7918700583BAC /* AppDelegate.swift */; };
 		6B0CE9612BD7918700583BAC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B0CE9602BD7918700583BAC /* SceneDelegate.swift */; };
 		6B0CE9632BD7918700583BAC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B0CE9622BD7918700583BAC /* ViewController.swift */; };
 		6B0CE9662BD7918700583BAC /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 6B0CE9652BD7918700583BAC /* Base */; };
 		6B0CE9682BD7918800583BAC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6B0CE9672BD7918800583BAC /* Assets.xcassets */; };
 		6B0CE96B2BD7918800583BAC /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 6B0CE96A2BD7918800583BAC /* Base */; };
+		6B0CE97D2BD7997800583BAC /* Manrope-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6B0CE9762BD7997800583BAC /* Manrope-ExtraLight.ttf */; };
+		6B0CE97E2BD7997800583BAC /* Manrope-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6B0CE9772BD7997800583BAC /* Manrope-SemiBold.ttf */; };
+		6B0CE97F2BD7997800583BAC /* Manrope-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6B0CE9782BD7997800583BAC /* Manrope-ExtraBold.ttf */; };
+		6B0CE9802BD7997800583BAC /* Manrope-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6B0CE9792BD7997800583BAC /* Manrope-Regular.ttf */; };
+		6B0CE9812BD7997800583BAC /* Manrope-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6B0CE97A2BD7997800583BAC /* Manrope-Medium.ttf */; };
+		6B0CE9822BD7997800583BAC /* Manrope-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6B0CE97B2BD7997800583BAC /* Manrope-Bold.ttf */; };
+		6B0CE9832BD7997800583BAC /* Manrope-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6B0CE97C2BD7997800583BAC /* Manrope-Light.ttf */; };
+		6B0CE9892BD79A8F00583BAC /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B0CE9882BD79A8F00583BAC /* UIColor+Extension.swift */; };
+		6B0CE98B2BD79BF100583BAC /* UIFont+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B0CE98A2BD79BF100583BAC /* UIFont+Extension.swift */; };
+		6B0CE98E2BD79C6200583BAC /* StationInformationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B0CE98D2BD79C6200583BAC /* StationInformationModel.swift */; };
+		6B0CE9902BD79CF300583BAC /* StationsDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B0CE98F2BD79CF300583BAC /* StationsDataModel.swift */; };
+		6B0CE9922BD7ADB300583BAC /* StationsStatusModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B0CE9912BD7ADB300583BAC /* StationsStatusModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0D66FE31F995710BEB45F6FD /* Pods-JakDojadeRecruitmentApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JakDojadeRecruitmentApp.release.xcconfig"; path = "Target Support Files/Pods-JakDojadeRecruitmentApp/Pods-JakDojadeRecruitmentApp.release.xcconfig"; sourceTree = "<group>"; };
+		4109FBE2D83117FA061E1C15 /* Pods_JakDojadeRecruitmentApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JakDojadeRecruitmentApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B0CE95B2BD7918700583BAC /* JakDojadeRecruitmentApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JakDojadeRecruitmentApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B0CE95E2BD7918700583BAC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6B0CE9602BD7918700583BAC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +39,19 @@
 		6B0CE9672BD7918800583BAC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6B0CE96A2BD7918800583BAC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6B0CE96C2BD7918800583BAC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6B0CE9762BD7997800583BAC /* Manrope-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Manrope-ExtraLight.ttf"; sourceTree = "<group>"; };
+		6B0CE9772BD7997800583BAC /* Manrope-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Manrope-SemiBold.ttf"; sourceTree = "<group>"; };
+		6B0CE9782BD7997800583BAC /* Manrope-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Manrope-ExtraBold.ttf"; sourceTree = "<group>"; };
+		6B0CE9792BD7997800583BAC /* Manrope-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Manrope-Regular.ttf"; sourceTree = "<group>"; };
+		6B0CE97A2BD7997800583BAC /* Manrope-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Manrope-Medium.ttf"; sourceTree = "<group>"; };
+		6B0CE97B2BD7997800583BAC /* Manrope-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Manrope-Bold.ttf"; sourceTree = "<group>"; };
+		6B0CE97C2BD7997800583BAC /* Manrope-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Manrope-Light.ttf"; sourceTree = "<group>"; };
+		6B0CE9882BD79A8F00583BAC /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = SOURCE_ROOT; };
+		6B0CE98A2BD79BF100583BAC /* UIFont+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Extension.swift"; sourceTree = "<group>"; };
+		6B0CE98D2BD79C6200583BAC /* StationInformationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationInformationModel.swift; sourceTree = "<group>"; };
+		6B0CE98F2BD79CF300583BAC /* StationsDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationsDataModel.swift; sourceTree = "<group>"; };
+		6B0CE9912BD7ADB300583BAC /* StationsStatusModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationsStatusModel.swift; sourceTree = "<group>"; };
+		896D97E338EC7CD91C235351 /* Pods-JakDojadeRecruitmentApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JakDojadeRecruitmentApp.debug.xcconfig"; path = "Target Support Files/Pods-JakDojadeRecruitmentApp/Pods-JakDojadeRecruitmentApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04BDC4FDF8A7F78FCAA4BA91 /* Pods_JakDojadeRecruitmentApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +71,8 @@
 			children = (
 				6B0CE95D2BD7918700583BAC /* JakDojadeRecruitmentApp */,
 				6B0CE95C2BD7918700583BAC /* Products */,
+				B7B4A0F4164141646B068AB0 /* Pods */,
+				CD51364FA16EDF91C8C1DF26 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +87,132 @@
 		6B0CE95D2BD7918700583BAC /* JakDojadeRecruitmentApp */ = {
 			isa = PBXGroup;
 			children = (
-				6B0CE95E2BD7918700583BAC /* AppDelegate.swift */,
-				6B0CE9602BD7918700583BAC /* SceneDelegate.swift */,
+				6B0CE9852BD799CA00583BAC /* Presentation */,
+				6B0CE9842BD799BF00583BAC /* Main */,
+				6B0CE9732BD7931500583BAC /* Utils */,
+				6B0CE9722BD792FE00583BAC /* Resources */,
 				6B0CE9622BD7918700583BAC /* ViewController.swift */,
 				6B0CE9642BD7918700583BAC /* Main.storyboard */,
-				6B0CE9672BD7918800583BAC /* Assets.xcassets */,
-				6B0CE9692BD7918800583BAC /* LaunchScreen.storyboard */,
 				6B0CE96C2BD7918800583BAC /* Info.plist */,
 			);
 			path = JakDojadeRecruitmentApp;
+			sourceTree = "<group>";
+		};
+		6B0CE9722BD792FE00583BAC /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				6B0CE9752BD7996A00583BAC /* Font */,
+				6B0CE9672BD7918800583BAC /* Assets.xcassets */,
+				6B0CE9692BD7918800583BAC /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		6B0CE9732BD7931500583BAC /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				6B0CE9872BD79A6B00583BAC /* Networking */,
+				6B0CE9862BD79A6000583BAC /* Extensions */,
+				6B0CE9742BD7992D00583BAC /* Enums */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		6B0CE9742BD7992D00583BAC /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Enums;
+			sourceTree = "<group>";
+		};
+		6B0CE9752BD7996A00583BAC /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				6B0CE97B2BD7997800583BAC /* Manrope-Bold.ttf */,
+				6B0CE9782BD7997800583BAC /* Manrope-ExtraBold.ttf */,
+				6B0CE9762BD7997800583BAC /* Manrope-ExtraLight.ttf */,
+				6B0CE97C2BD7997800583BAC /* Manrope-Light.ttf */,
+				6B0CE97A2BD7997800583BAC /* Manrope-Medium.ttf */,
+				6B0CE9792BD7997800583BAC /* Manrope-Regular.ttf */,
+				6B0CE9772BD7997800583BAC /* Manrope-SemiBold.ttf */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
+		6B0CE9842BD799BF00583BAC /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				6B0CE95E2BD7918700583BAC /* AppDelegate.swift */,
+				6B0CE9602BD7918700583BAC /* SceneDelegate.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		6B0CE9852BD799CA00583BAC /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				6B0CE9942BD7B5FC00583BAC /* DetailsView */,
+				6B0CE9932BD7B5F200583BAC /* MainView */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		6B0CE9862BD79A6000583BAC /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				6B0CE9882BD79A8F00583BAC /* UIColor+Extension.swift */,
+				6B0CE98A2BD79BF100583BAC /* UIFont+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		6B0CE9872BD79A6B00583BAC /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				6B0CE98C2BD79C4B00583BAC /* Models */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		6B0CE98C2BD79C4B00583BAC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				6B0CE98D2BD79C6200583BAC /* StationInformationModel.swift */,
+				6B0CE98F2BD79CF300583BAC /* StationsDataModel.swift */,
+				6B0CE9912BD7ADB300583BAC /* StationsStatusModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		6B0CE9932BD7B5F200583BAC /* MainView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = MainView;
+			sourceTree = "<group>";
+		};
+		6B0CE9942BD7B5FC00583BAC /* DetailsView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DetailsView;
+			sourceTree = "<group>";
+		};
+		B7B4A0F4164141646B068AB0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				896D97E338EC7CD91C235351 /* Pods-JakDojadeRecruitmentApp.debug.xcconfig */,
+				0D66FE31F995710BEB45F6FD /* Pods-JakDojadeRecruitmentApp.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		CD51364FA16EDF91C8C1DF26 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4109FBE2D83117FA061E1C15 /* Pods_JakDojadeRecruitmentApp.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +222,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6B0CE96F2BD7918800583BAC /* Build configuration list for PBXNativeTarget "JakDojadeRecruitmentApp" */;
 			buildPhases = (
+				185C0CCD653639BC1B44C4C0 /* [CP] Check Pods Manifest.lock */,
 				6B0CE9572BD7918700583BAC /* Sources */,
 				6B0CE9582BD7918700583BAC /* Frameworks */,
 				6B0CE9592BD7918700583BAC /* Resources */,
+				45AF2A2BF29038A0D52D5665 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -125,13 +275,62 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6B0CE97E2BD7997800583BAC /* Manrope-SemiBold.ttf in Resources */,
 				6B0CE9682BD7918800583BAC /* Assets.xcassets in Resources */,
+				6B0CE97D2BD7997800583BAC /* Manrope-ExtraLight.ttf in Resources */,
+				6B0CE97F2BD7997800583BAC /* Manrope-ExtraBold.ttf in Resources */,
+				6B0CE9832BD7997800583BAC /* Manrope-Light.ttf in Resources */,
 				6B0CE96B2BD7918800583BAC /* Base in Resources */,
 				6B0CE9662BD7918700583BAC /* Base in Resources */,
+				6B0CE9812BD7997800583BAC /* Manrope-Medium.ttf in Resources */,
+				6B0CE9822BD7997800583BAC /* Manrope-Bold.ttf in Resources */,
+				6B0CE9802BD7997800583BAC /* Manrope-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		185C0CCD653639BC1B44C4C0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-JakDojadeRecruitmentApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		45AF2A2BF29038A0D52D5665 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-JakDojadeRecruitmentApp/Pods-JakDojadeRecruitmentApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-JakDojadeRecruitmentApp/Pods-JakDojadeRecruitmentApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-JakDojadeRecruitmentApp/Pods-JakDojadeRecruitmentApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		6B0CE9572BD7918700583BAC /* Sources */ = {
@@ -139,8 +338,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				6B0CE9632BD7918700583BAC /* ViewController.swift in Sources */,
+				6B0CE9902BD79CF300583BAC /* StationsDataModel.swift in Sources */,
+				6B0CE98E2BD79C6200583BAC /* StationInformationModel.swift in Sources */,
 				6B0CE95F2BD7918700583BAC /* AppDelegate.swift in Sources */,
 				6B0CE9612BD7918700583BAC /* SceneDelegate.swift in Sources */,
+				6B0CE98B2BD79BF100583BAC /* UIFont+Extension.swift in Sources */,
+				6B0CE9922BD7ADB300583BAC /* StationsStatusModel.swift in Sources */,
+				6B0CE9892BD79A8F00583BAC /* UIColor+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,6 +491,7 @@
 		};
 		6B0CE9702BD7918800583BAC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 896D97E338EC7CD91C235351 /* Pods-JakDojadeRecruitmentApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -295,11 +500,13 @@
 				DEVELOPMENT_TEAM = BJU2BBB5UC;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = JakDojadeRecruitmentApp/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = JakDojadeRecruitmentApp;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -307,14 +514,19 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.JakDojadeRecruitmentApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		6B0CE9712BD7918800583BAC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0D66FE31F995710BEB45F6FD /* Pods-JakDojadeRecruitmentApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -323,11 +535,13 @@
 				DEVELOPMENT_TEAM = BJU2BBB5UC;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = JakDojadeRecruitmentApp/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = JakDojadeRecruitmentApp;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -335,9 +549,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.JakDojadeRecruitmentApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
