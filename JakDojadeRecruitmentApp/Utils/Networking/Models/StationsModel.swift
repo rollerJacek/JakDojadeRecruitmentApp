@@ -1,5 +1,5 @@
 //
-//  StationInformationModel.swift
+//  StationsModel.swift
 //  JakDojadeRecruitmentApp
 //
 //  Created by Jacek Stąporek on 23/04/2024.
@@ -7,10 +7,10 @@
 
 import Foundation
 
-class StationInformationModel: Decodable {
-    var lastUpdated: Int
-    var ttl: Int
-    var version: String
+class StationsModel: Decodable {
+    let lastUpdated: Int
+    let ttl: Int
+    let version: String
     let data: DataModel
     
     enum CodingKeys: String, CodingKey {

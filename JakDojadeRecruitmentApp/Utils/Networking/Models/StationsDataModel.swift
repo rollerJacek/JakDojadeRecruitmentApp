@@ -18,14 +18,14 @@ class StationsDataModel: Decodable {
     let capacity: Int?
     let stationArea: StationAreaModel?
     
-    let isInstalled: Bool?
-    let isRenting: Bool?
-    let isReturning: Bool?
-    let lastReported: Int?
-    let vehiclesAvailable: Int?
-    let bikesAvailable: Int?
-    let dockAvailable: Int?
-    let vehiclesTypesAvailible: [VehiclesTypesAvailableModel]?
+    var isInstalled: Bool?
+    var isRenting: Bool?
+    var isReturning: Bool?
+    var lastReported: Int?
+    var vehiclesAvailable: Int?
+    var bikesAvailable: Int?
+    var dockAvailable: Int?
+    var vehiclesTypesAvailible: [VehiclesTypesAvailableModel]?
     
     enum CodingKeys: String, CodingKey {
         case stationId = "station_id"
