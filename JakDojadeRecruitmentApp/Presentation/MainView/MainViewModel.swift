@@ -68,7 +68,7 @@ class MainViewModel: NSObject {
                 if distance.value > 1000 {
                     distance = distance.converted(to: .kilometers)
                 }
-                completion("\(Int(distance.value)) \(distance.unit.symbol)")
+                completion("\(Int(distance.value))\(distance.unit.symbol)")
             }
         }
     }
@@ -77,15 +77,16 @@ class MainViewModel: NSObject {
 extension MainViewModel: CLLocationManagerDelegate {
     func locationManagerDidChangeAuthorization(_ manager: CLLocationManager) {
         if #available(iOS 14.0, *) {
-            if manager.authorizationStatus == .authorizedWhenInUse || manager.authorizationStatus == .authorizedAlways {
-                currentLocation = manager.location
-                delegate?.didGetLocation()
-            }
+            guard manager.authorizationStatus == .authorizedWhenInUse || manager.authorizationStatus == .authorizedAlways else { return }
+            
+            currentLocation = manager.location
+            delegate?.didGetLocation()
         } else {
-            if CLLocationManager.authorizationStatus() == .authorizedWhenInUse || CLLocationManager.authorizationStatus() == .authorizedAlways {
-                currentLocation = manager.location
-                delegate?.didGetLocation()
-            }
+            guard CLLocationManager.authorizationStatus() == .authorizedWhenInUse || CLLocationManager.authorizationStatus() == .authorizedAlways else { return }
+            
+            currentLocation = manager.location
+            delegate?.didGetLocation()
+            
         }
     }
     
@@ -95,7 +96,7 @@ extension MainViewModel: CLLocationManagerDelegate {
             delegate?.didGetLocation()
         }
     }
-
+    
     func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
         print("Failed to find user's location: \(error.localizedDescription)")
     }

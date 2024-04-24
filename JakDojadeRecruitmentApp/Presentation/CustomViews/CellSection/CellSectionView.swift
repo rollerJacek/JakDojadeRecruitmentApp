@@ -29,7 +29,7 @@ class CellSectionView: UIView {
         let label = UILabel()
         label.font = .manropeBold(size: 12)
         label.textColor = .mainFont
-        label.text = "500m"
+        label.text = "-m"
         return label
     }()
     
@@ -169,15 +169,15 @@ class CellSectionView: UIView {
         }
         
         descriptionContainer.snp.makeConstraints { make in
-            make.left.equalTo(titleLabel)
             make.top.equalTo(titleLabel.snp.bottom)
+            make.left.equalTo(titleLabel)
         }
         
         bottomSectionContainer.snp.makeConstraints { make in
             make.top.equalTo(descriptionContainer.snp.bottom).offset(20)
             make.left.equalTo(self).offset(16)
-            make.bottom.equalTo(self).offset(-16)
             make.right.equalTo(self).offset(-16)
+            make.bottom.equalTo(self).offset(-16)
         }
     }
     

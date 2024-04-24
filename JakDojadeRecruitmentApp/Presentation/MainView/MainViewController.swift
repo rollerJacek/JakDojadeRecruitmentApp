@@ -9,8 +9,6 @@ import UIKit
 import SnapKit
 
 class MainViewController: UIViewController {
-    let viewModel = MainViewModel()
-    
     lazy private var topBar: NavigationBarView = {
         let topBar = NavigationBarView()
         topBar.hideBackButton()
@@ -19,20 +17,17 @@ class MainViewController: UIViewController {
     
     lazy private var container: UIView = {
         let view = UIView()
-        view.translatesAutoresizingMaskIntoConstraints = false
         view.backgroundColor = .clear
         return view
     }()
     
     lazy private var indicator: UIActivityIndicatorView = {
         let indicatorView = UIActivityIndicatorView(style: .large)
-        indicatorView.translatesAutoresizingMaskIntoConstraints = false
         return indicatorView
     }()
     
     lazy private var tableView: UITableView = {
         let tableView = UITableView()
-        tableView.translatesAutoresizingMaskIntoConstraints = false
         tableView.separatorStyle = .none
         tableView.delegate = self
         tableView.dataSource = self
@@ -40,6 +35,8 @@ class MainViewController: UIViewController {
         tableView.register(MainViewTableViewCell.self, forCellReuseIdentifier: CellId.mainView)
         return tableView
     }()
+    
+    let viewModel = MainViewModel()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -109,7 +106,8 @@ extension MainViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         guard let data = viewModel.stations?.data.stations[indexPath.row] else { return }
-        let vc = DetailsView(data: data)
+        
+        let vc = DetailsViewController(data: data)
         navigationController?.pushViewController(vc, animated: true)
     }
     

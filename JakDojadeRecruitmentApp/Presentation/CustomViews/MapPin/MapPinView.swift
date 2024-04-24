@@ -56,8 +56,8 @@ class MapPinView: UIView {
             make.edges.equalTo(snp.edges)
         }
         countLabel.snp.makeConstraints { make in
-            make.left.equalTo(container).offset(4)
             make.top.bottom.equalTo(container)
+            make.left.equalTo(container).offset(4)
             make.right.equalTo(bikeImg.snp.left).offset(4)
         }
         bikeImg.snp.makeConstraints { make in

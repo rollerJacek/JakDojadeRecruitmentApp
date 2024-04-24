@@ -55,9 +55,9 @@ class MainViewTableViewCell: UITableViewCell {
     
     func setupConstraints() {
         container.snp.makeConstraints { make in
+            make.top.equalTo(self).offset(4)
             make.left.equalTo(self).offset(16)
             make.right.equalTo(self).offset(-16)
-            make.top.equalTo(self).offset(4)
             make.bottom.equalTo(self).offset(-4)
             
             make.edges.equalTo(content)

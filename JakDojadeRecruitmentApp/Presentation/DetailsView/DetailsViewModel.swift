@@ -73,7 +73,7 @@ class DetailsViewModel: NSObject {
                 if distance.value > 1000 {
                     distance = distance.converted(to: .kilometers)
                 }
-                completion("\(Int(distance.value)) \(distance.unit.symbol)")
+                completion("\(Int(distance.value))\(distance.unit.symbol)")
             }
         }
     }
@@ -86,15 +86,16 @@ class DetailsViewModel: NSObject {
 extension DetailsViewModel: CLLocationManagerDelegate {
     func locationManagerDidChangeAuthorization(_ manager: CLLocationManager) {
         if #available(iOS 14.0, *) {
-            if manager.authorizationStatus == .authorizedWhenInUse || manager.authorizationStatus == .authorizedAlways {
-                currentLocation = manager.location
-                delegate?.didGetLocation()
-            }
+            guard manager.authorizationStatus == .authorizedWhenInUse || manager.authorizationStatus == .authorizedAlways else { return }
+            
+            currentLocation = manager.location
+            delegate?.didGetLocation()
         } else {
-            if CLLocationManager.authorizationStatus() == .authorizedWhenInUse || CLLocationManager.authorizationStatus() == .authorizedAlways {
-                currentLocation = manager.location
-                delegate?.didGetLocation()
-            }
+            guard CLLocationManager.authorizationStatus() == .authorizedWhenInUse || CLLocationManager.authorizationStatus() == .authorizedAlways else { return }
+            
+            currentLocation = manager.location
+            delegate?.didGetLocation()
+            
         }
     }
     

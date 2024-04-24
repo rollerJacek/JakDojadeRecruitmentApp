@@ -1,5 +1,5 @@
 //
-//  DetailsView.swift
+//  DetailsViewController.swift
 //  JakDojadeRecruitmentApp
 //
 //  Created by Jacek Stąporek on 23/04/2024.
@@ -9,9 +9,7 @@ import UIKit
 import SnapKit
 import MapKit
 
-class DetailsView: UIViewController {
-    let viewModel: DetailsViewModel
-    
+class DetailsViewController: UIViewController {
     lazy private var topBar: NavigationBarView = {
         let topBar = NavigationBarView()
         topBar.translatesAutoresizingMaskIntoConstraints = false
@@ -43,11 +41,13 @@ class DetailsView: UIViewController {
     
     lazy private var mapView: MKMapView = {
         let mapView = MKMapView()
-        mapView.register(CustomAnnotation.self, forAnnotationViewWithReuseIdentifier: NSStringFromClass(CustomAnnotation.self))
+        mapView.register(CustomAnnotation.self, forAnnotationViewWithReuseIdentifier: CellId.mapPinView)
         mapView.delegate = self
         mapView.showsUserLocation = true
         return mapView
     }()
+    
+    let viewModel: DetailsViewModel
     
     init(data: StationsDataModel) {
         self.viewModel = DetailsViewModel(data: data)
@@ -92,7 +92,7 @@ class DetailsView: UIViewController {
             make.left.right.bottom.equalToSuperview()
         }
         bottomContainer.snp.makeConstraints { make in
-            make.left.bottom.right.equalTo(container)
+            make.left.right.bottom.equalTo(container)
         }
         bottomContent.snp.makeConstraints { make in
             make.top.left.right.equalTo(bottomContainer)
@@ -106,7 +106,7 @@ class DetailsView: UIViewController {
     }
 }
 
-extension DetailsView: MKMapViewDelegate {
+extension DetailsViewController: MKMapViewDelegate {
     func mapView(_ mapView: MKMapView, rendererFor overlay: MKOverlay) -> MKOverlayRenderer {
         let renderer = MKPolylineRenderer(overlay: overlay)
         renderer.lineDashPattern = [2,2]
@@ -117,16 +117,17 @@ extension DetailsView: MKMapViewDelegate {
     
     func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
         guard !annotation.isKind(of: MKUserLocation.self) else { return nil }
-        let reuseIdentifier = NSStringFromClass(CustomAnnotation.self)
-        let annotationView = mapView.dequeueReusableAnnotationView(withIdentifier: reuseIdentifier, for: annotation) as? CustomAnnotation
+        
+        let annotationView = mapView.dequeueReusableAnnotationView(withIdentifier: CellId.mapPinView, for: annotation) as? CustomAnnotation
         annotationView?.canShowCallout = true
         annotationView?.setCount(viewModel.getBikesAvailable())
         return annotationView
     }
 }
 
-extension DetailsView: DetailsViewModelDelegate {
+extension DetailsViewController: DetailsViewModelDelegate {
     func didGetLocation() {
+        viewModel.showRouteOn(mapView: mapView)
         viewModel.getDistanceToDestination { [weak self] distance in
             self?.bottomContent.setupView(with: distance)
         }
